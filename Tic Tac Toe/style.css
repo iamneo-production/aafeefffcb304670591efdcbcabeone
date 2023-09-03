@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Itim', cursive;
 }
 
 .background {
-    background-color: #12181b;
+    background-color: #12181B;
     height: 100vh;
-    padding: 2px;
+    padding-top: 1px;
 }
 
 .title {
@@ -30,11 +30,12 @@
 }
 
 .container {
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
+
 }
 
 .tile {
@@ -46,4 +47,38 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+}
+
+.playerX {
+    color: #09C372;
+}
+
+.playerO {
+    color: #498AFB;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
 }
